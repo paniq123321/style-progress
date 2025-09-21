@@ -1,9 +1,10 @@
+import { ProgressBarComponent } from './components/progress-bar'
 export default function App() {
 
   return (
-    <main>
-      Hello world!
-    </main>
+    <>
+      <ProgressBarComponent />
+    </>
   )
 }
 
