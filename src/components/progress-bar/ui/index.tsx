@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useProgressbarStore } from "../../../stores";
 
 export const ProgressBarComponent = () => {
-  const [progress, setProgress] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+
+  const progress = useProgressbarStore(state => state.progress);
+  const setProgress = useProgressbarStore(state => state.setProgress);
 
 
 
@@ -20,7 +23,7 @@ export const ProgressBarComponent = () => {
       if (newProgress < 0) newProgress = 0;
       if (newProgress > 100) newProgress = 100;
 
-      setProgress(newProgress);
+      setProgress(newProgress)
     };
 
     const handleMouseUp = () => setIsDragging(false);
