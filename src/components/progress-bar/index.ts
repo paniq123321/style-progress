@@ -1,1 +1,1 @@
-export { ProgressBarComponent } from './ui'
+export { ProgressBarComponent } from "./ui";

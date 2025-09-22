@@ -1,1 +1,1 @@
-export { useProgressbarStore }  from './use-progressbar-store.ts'
+export { useProgressbarStore } from "./use-progressbar-store.ts";

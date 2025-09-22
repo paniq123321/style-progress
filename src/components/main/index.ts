@@ -1,1 +1,1 @@
-export { MainComponent } from './ui'
+export { MainComponent } from "./ui";
