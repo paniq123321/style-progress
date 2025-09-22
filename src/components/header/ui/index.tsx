@@ -26,7 +26,7 @@ export const HeaderComponent = () => {
       <ul className="flex gap-6 mx-2">
         <li
         style={{
-          transform: `translateY(-${(20 - progress) / 10}rem)`,
+          transform: `translateY(-${20 - progress? (20 - progress) / 10 : 0}rem)`,
         }}
         >
           <div style={{
@@ -39,7 +39,7 @@ export const HeaderComponent = () => {
         </li>
         <li
           style={{
-            transform: `translateY(-${(40 - progress) / 10}rem)`,
+            transform: `translateY(-${40 - progress? (40 - progress) / 10 : 0}rem)`,
           }}
         > <div
           style={{
@@ -53,7 +53,7 @@ export const HeaderComponent = () => {
         </li>
         <li
           style={{
-            transform: `translateY(-${(60 - progress) / 10}rem)`,
+            transform: `translateY(-${60 - progress? (60 - progress) / 10 : 0}rem)`,
           }}
         > <div
           style={{
@@ -67,7 +67,7 @@ export const HeaderComponent = () => {
         </li>
         <li
           style={{
-            transform: `translateY(-${(80 - progress) / 10}rem)`,
+            transform: `translateY(-${80 - progress? (80 - progress) / 10 : 0}rem)`,
           }}
         > <div
           style={{
