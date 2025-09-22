@@ -1,3 +1,4 @@
+import { MainComponent } from "./components/main";
 import { ProgressBarComponent } from './components/progress-bar'
 import { HeaderComponent } from './components/header'
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <>
       <HeaderComponent />
       <ProgressBarComponent />
+      <MainComponent />
     </>
   )
 }
