@@ -41,7 +41,7 @@ export const ProgressBarComponent = () => {
 
 
   return(
-    <section className="absolute inset-0 flex justify-center items-center">
+    <section className="absolute inset-0 flex justify-center items-center -z-1">
     <ul
       id="progress-bar"
       className=" relative h-3  w-[90%] max-w-[25rem] bg-gray-200 rounded-full"
