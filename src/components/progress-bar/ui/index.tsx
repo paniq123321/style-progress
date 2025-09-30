@@ -14,14 +14,11 @@ export const ProgressBarComponent = () => {
 
       const progressBar = document.getElementById("progress-bar");
       if (!progressBar) return;
-
       const rect = progressBar.getBoundingClientRect();
       const offsetX = e.clientX - rect.left;
       let newProgress = (offsetX / rect.width) * 100;
-
       if (newProgress < 0) newProgress = 0;
       if (newProgress > 100) newProgress = 100;
-
       setProgress(newProgress);
     };
 
