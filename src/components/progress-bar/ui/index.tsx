@@ -11,7 +11,6 @@ export const ProgressBarComponent = () => {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!isDragging) return;
-
       const progressBar = document.getElementById("progress-bar");
       if (!progressBar) return;
       const rect = progressBar.getBoundingClientRect();
@@ -21,7 +20,6 @@ export const ProgressBarComponent = () => {
       if (newProgress > 100) newProgress = 100;
       setProgress(newProgress);
     };
-
     const handleMouseUp = () => setIsDragging(false);
 
     if (isDragging) {
@@ -34,8 +32,6 @@ export const ProgressBarComponent = () => {
       window.removeEventListener("mouseup", handleMouseUp);
     };
   }, [isDragging]);
-
-
   return (
     <section className="absolute inset-0 flex justify-center items-center -z-1">
       <ul
