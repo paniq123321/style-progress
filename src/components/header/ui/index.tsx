@@ -1,4 +1,3 @@
-
 import { useProgressbarStore } from "../../../stores";
 
 export const HeaderComponent = () => {
