@@ -1,9 +1,10 @@
+
 import { useProgressbarStore } from "../../../stores";
 
 export const HeaderComponent = () => {
   const progress = useProgressbarStore(state => state.progress);
 
-  const deg = (progress / 60) * 360;
+  const deg = (progress / 20) * 360;
   const transform = (100 - progress) / 10;
 
   return (
